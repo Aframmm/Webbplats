@@ -1,0 +1,174 @@
+/*Style för interna länkar i globala menyn*/
+a {
+    text-decoration: none;
+    font-family: arial;
+}
+
+/*Position och färg till body*/
+body {
+    background: rgb(63,251,246);
+    background: radial-gradient(circle, rgb(58, 44, 255) 0%, rgba(70,89,252,1) 100%);
+    margin: 0;
+}
+ 
+
+/*Style, Position och bakgrundsfärg på globala menyn*/
+.navbar {
+    background: radial-gradient(rgb(87, 87, 87), rgb(36, 56, 65));
+    overflow: hidden;
+    border-radius: 100px;
+ 
+    position: fixed;
+ 
+    left: 50%;
+    top: 99%;
+    transform: translate(-50%, -110%);
+  
+  }
+  
+  /*Mer style för globala menyn och style till text*/
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+ 
+  }
+  
+  /*Färg på både text och knapp som man håller pekaren över i menyn*/
+  .navbar a:hover {
+    background:radial-gradient(white, lightblue);
+    color: black;
+  }
+  
+  /*Färg på både text och knapp som är aktiv i menyn*/
+  .navbar a.active {
+    background: radial-gradient(rgb(0, 25, 95), rgb(0, 217, 255));
+    color: white;
+  }
+ 
+  /*Höjd på hela sidan*/
+  html{
+      height: 2000px;
+  }
+
+/*Bestämmer grid för sidan*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    
+    grid-template-rows: repeat(10, 1fr);
+    height: 2000px;
+    width: 100%;
+}
+
+/*Grid och style för mittendelen av sidan*/
+.grid-container > div {
+    background: linear-gradient(rgb(46, 49, 90), rgb(1, 19, 97));
+
+    grid-column: 2/10;
+    grid-row: 1/11;
+
+}
+
+/*Style till alla p-taggar*/
+p {
+    font-size: 100px;
+    color: white;
+}
+
+/*Style till rubrik*/
+h1 {
+    grid-column: 4/8;
+    grid-row: 1;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+}
+
+/*Grid och style till header*/
+header {
+  grid-column: 1/11;
+  grid-row: 1;
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(rgb(6, 56, 78), rgb(0, 0, 0));
+  color: white;
+  font-size: 30px;
+}
+
+/*Grid för main*/
+main {
+  grid-column: 1/11;
+  grid-row: 2/10;
+}
+
+/*Grid för footer*/
+footer {
+  grid-column: 1/11;
+  grid-row: 10;
+  padding: 1px;
+  background-color: rgb(0, 0, 0);
+}
+
+/*Style och position till .footer class*/
+.footer{
+  margin-top: 50px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: arial;
+}
+
+/*grid för section på varje sida*/
+section {
+  grid-column: 2/10;
+  grid-row: 2/10;
+}
+
+/*Style till p-tagg på förstasidan*/
+.index-p{
+  font-size: 50px;
+  font-family: arial;
+  
+}
+
+/*Style till p-tagg på andrasidan*/
+.ommig-p{
+  font-size: 50px; /*Storlek till text om mig*/
+  font-family: arial; /*Texttyp till text om mig*/
+  
+}
+
+/*Storlek på pizzabilden*/
+.pizza {
+    width: 700px;
+}
+
+/*Lista på förstasidan*/
+li {
+    color: white;
+    font-size: 35px;
+}
+
+/*Bredd för bilden på intresse*/
+.psstudios {
+  width: 100%;
+}
+
+/*Style fär tabellen*/
+table , th , tr , td{
+  border: solid 10px white;
+  border-collapse: collapse;
+  color: white;
+  font-size: 100px;;
+  grid-column: 2/8; 
+  grid-row:3/6;
+}
+
+/*Zebra striping på tabell*/
+tr:nth-child(odd){
+  background-color:black;
+} 
